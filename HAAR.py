@@ -31,6 +31,8 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
     cv.imshow("Frame", image);
     key = cv.waitKey(1) & 0xFF
     rawCapture.truncate(0)
-    if key == ord("q"):
-       break
+    if(cv.waitKey(20)&0xFF==ord('d')):#imp for break in csmera
+     break
+
+
   
